@@ -409,13 +409,8 @@ public class In extends AppCompatActivity {
                         isExistence = true;
                     }
 //
-
                 }
-
-                LogUtils.e("Existence ->" +isExistence);
-
                 if (!isExistence){
-
                     try{
                             int  totalQuant = Integer.parseInt(sku_amt.getText().toString());
                             LogUtils.e("Total - "+ totalQuant);
