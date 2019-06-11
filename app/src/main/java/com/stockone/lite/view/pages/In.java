@@ -433,9 +433,6 @@ public class In extends AppCompatActivity {
 
                 setProductLoc();
                 addTransactions(sku, amount, sku_location.getText().toString());
-//                LogUtils.e(snapshot.hasChild("name"));
-//                if (snapshot.hasChild("name")) {
-//                }
             }
 
             @Override

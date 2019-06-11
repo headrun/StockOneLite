@@ -21,13 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22d765ab-09dc-44f9-bb4d-039b59c14b4a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/prod/release/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/prod/release/output.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/utils/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/utils/General.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/view/pages/In.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/view/pages/In.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,8 +136,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/stockone/lite/view/pages/In.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="418" column="16" selection-start-line="418" selection-start-column="16" selection-end-line="418" selection-end-column="16" />
+            <state relative-caret-position="75">
+              <caret line="412" column="34" selection-start-line="412" selection-start-column="34" selection-end-line="412" selection-end-column="34" />
               <folding>
                 <element signature="e#22717#22780#0" />
               </folding>
@@ -235,6 +229,7 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/view/pages/ScanBarcodeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/utils/General.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/stockone/lite/view/pages/In.java" />
       </list>
     </option>
   </component>
@@ -914,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/stockone/lite/view/pages/In.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="418" column="16" selection-start-line="418" selection-start-column="16" selection-end-line="418" selection-end-column="16" />
+        <state relative-caret-position="75">
+          <caret line="412" column="34" selection-start-line="412" selection-start-column="34" selection-end-line="412" selection-end-column="34" />
           <folding>
             <element signature="e#22717#22780#0" />
           </folding>
