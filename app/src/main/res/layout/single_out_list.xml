@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/out_storage_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Storage Locations"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green"/>
+
+    <TextView
+        android:layout_below="@+id/out_storage_location"
+        android:id="@+id/out_storage_quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Default Storage Locations"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+    <EditText
+        android:layout_below="@+id/out_storage_quant"
+        android:id="@+id/out_storage_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="20dp"
+        android:focusableInTouchMode="true"
+        android:paddingRight="10dp"
+        android:inputType="number"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:theme="@style/MyEditTextStyle1"/>
+
+</RelativeLayout>

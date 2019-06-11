@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_in"
+            android:icon="@drawable/ic_in"
+            android:title="Stock In" />
+        <item
+            android:id="@+id/nav_out"
+            android:icon="@drawable/ic_out"
+            android:title="Stock Out" />
+        <item
+            android:id="@+id/nav_move"
+            android:icon="@drawable/ic_move"
+            android:title="Stock Move" />
+        <item
+            android:id="@+id/nav_inventory"
+            android:icon="@drawable/ic_inventory"
+            android:title="Inventory" />
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_information"
+            android:title="Information" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_location"
+            android:title="Locations" />
+
+        <item
+            android:id="@+id/nav_transaction"
+            android:icon="@drawable/ic_history"
+            android:title="Transaction" />
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/ic_products"
+            android:title="Products" />
+
+        <item
+            android:id="@+id/nav_count"
+            android:icon="@drawable/ic_count"
+            android:title="Count" />
+
+        <item
+            android:id="@+id/nav_subscription"
+            android:icon="@drawable/ic_purchase"
+            android:title="Subscription" />
+
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/ic_rate_us"
+            android:title="Rate Us" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+    </group>
+
+   <!-- <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

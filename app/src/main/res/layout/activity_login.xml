@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    tools:context=".view.auth.Login">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"/>
+
+    <RelativeLayout
+        android:id="@+id/phone_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_login_icon"/>
+
+
+            <LinearLayout
+                android:id="@+id/stock_ll"
+                android:layout_below="@+id/img_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/text_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STOCK"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/text_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ONE"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/text_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Lite."
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_ll"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_country_code"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="+91"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_flag"
+                android:inputType="textEmailAddress"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle"/>
+
+            <EditText
+                android:id="@+id/edt_phone_no"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:hint="Phone no"
+                android:maxLength="10"
+                android:drawablePadding="8dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:inputType="number"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle"/>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/border"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                style="@style/AVLoadingIndicatorView"
+                android:visibility="visible"
+                app:indicatorName="LineScalePartyIndicator"
+                app:indicatorColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/otp_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_login_icon"/>
+
+
+            <LinearLayout
+                android:layout_below="@+id/img_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STOCK"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/text_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ONE"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_toRightOf="@+id/text_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Lite."
+                    android:textColor="@color/yellow"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edt_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter OTP"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:inputType="number"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textColorHint="@color/white"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle"/>
+
+
+            <Button
+                android:id="@+id/btn_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="30dp"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend OTP"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:id="@+id/txt_resend_otp"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_gravity="end"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                style="@style/AVLoadingIndicatorView"
+                android:visibility="visible"
+                app:indicatorName="LineScalePartyIndicator"
+                app:indicatorColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+# StockOne_Lite_Android

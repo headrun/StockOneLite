@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stockone.lite.view.pages.Transactions">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_transactions"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transactions"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/toolbar_transactions"
+        android:id="@+id/rv_transactions"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/toolbar_transactions"
+        android:id="@+id/rv_storage_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_storage"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar_storage_inv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_storage"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_below="@+id/lottie_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Transaction you have made till now"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_transactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScalePartyIndicator"
+        app:indicatorColor="@color/green" />
+
+</RelativeLayout>

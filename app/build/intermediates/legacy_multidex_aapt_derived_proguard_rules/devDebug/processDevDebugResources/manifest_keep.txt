@@ -1,0 +1,2 @@
+# Referenced at /Users/suraj/Documents/projects/stockone_lite/app/build/intermediates/merged_manifests/devDebug/processDevDebugManifest/merged/AndroidManifest.xml:36
+-keep class com.stockone.lite.application.MyApplication { <init>(...); }

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.stockone.lite.view.pages.Inventory">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_inventory"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inventory"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/dwnld_inventory_excel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_download_files"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txt_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Inventory"
+        android:textColor="@color/green"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/toolbar_inventory"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_inventory"
+        android:layout_below="@+id/txt_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/empty_storage"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar_inventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_inv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_below="@+id/lottie_inv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Inventory Added Yet"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_below="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap 'Add Inventory' button below to add your first Inventory Item!"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btn_in_sku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            app:contentPadding="10dp"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#a8e063">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Inventory"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="LineScalePartyIndicator"
+        app:indicatorColor="@color/green" />
+
+</RelativeLayout>

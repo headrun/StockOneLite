@@ -1,0 +1,13 @@
+#Tue Mar 26 18:03:14 IST 2019
+path.3=classes4.dex
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=/Users/suraj/Documents/projects/stockone_lite/app/build/intermediates/transforms/dexMerger/dev/debug/0
+base.2=/Users/suraj/Documents/projects/stockone_lite/app/build/intermediates/transforms/dexMerger/dev/debug/0
+base.1=/Users/suraj/Documents/projects/stockone_lite/app/build/intermediates/transforms/dexMerger/dev/debug/0
+base.0=/Users/suraj/Documents/projects/stockone_lite/app/build/intermediates/transforms/dexMerger/dev/debug/0

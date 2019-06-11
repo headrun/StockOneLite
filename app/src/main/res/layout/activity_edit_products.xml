@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    tools:context="com.stockone.lite.view.pages.EditProducts">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edit_products"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Products"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_edit_products">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_edit_id"
+                android:layout_below="@+id/products_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CTOO1"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/text_edit_created"
+                android:layout_below="@+id/products_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26th July"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="6dp"
+                android:focusableInTouchMode="true"
+                android:paddingRight="10dp"
+                android:inputType="text"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minimum Amount"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_edit_min_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="6dp"
+                android:focusableInTouchMode="true"
+                android:paddingRight="10dp"
+                android:inputType="number"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maximum Amount"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_edit_max_amt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="6dp"
+                android:focusableInTouchMode="true"
+                android:paddingRight="10dp"
+                android:inputType="number"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/et_edit_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:paddingLeft="6dp"
+                android:focusableInTouchMode="true"
+                android:paddingRight="6dp"
+                android:inputType="number"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:theme="@style/MyEditTextStyle1"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inactive"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    android:id="@+id/toggle_rl"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <com.zcw.togglebutton.ToggleButton
+                        android:id="@+id/inactive_switch"
+                        android:layout_width="42dp"
+                        toggle:tbOnColor="@color/colorPrimary"
+                        toggle:tbOffColor="#ddd"
+                        android:layout_alignParentRight="true"
+                        toggle:tbSpotColor="@color/white"
+                        android:layout_height="17dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/btn_edit_products"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                app:cardCornerRadius="5dp"
+                app:contentPadding="10dp"
+                android:layout_marginBottom="40dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#a8e063">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAVE"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

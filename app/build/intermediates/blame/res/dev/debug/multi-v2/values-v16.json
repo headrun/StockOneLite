@@ -1,0 +1,57 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/suraj/Documents/projects/stockone_lite/app/build/intermediates/incremental/mergeDevDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/Users/suraj/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0-alpha3.aar/46298cdd6d03e0908977ce92b18f1bde/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/Users/suraj/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0-alpha3.aar/62391071f274e573c85cc77be3bdd334/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "309",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "477"
+                    }
+                },
+                {
+                    "source": "/Users/suraj/.gradle/caches/transforms-1/files-1.1/alerter-2.0.0.aar/fc30594d83bada1dd9e08d9dbe932659/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "238"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "304"
+                    }
+                }
+            ]
+        }
+    ]
+}

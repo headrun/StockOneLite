@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.stockone.lite.view.pages.Subscription">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_subscription"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscription"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/upper_ll"
+        android:layout_below="@+id/toolbar_subscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free 14 days trial is active!"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/trial_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textColor="@color/red"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/upper_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Subscription"
+            android:textSize="16sp"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Free features"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_plus"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlimited transactions (Fair use)"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_tick_right"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product information"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_tick_right"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move inventory between locations"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_tick_right"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Count and correct inventory"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_tick_right"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analyse inventory"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_tick_right"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <RelativeLayout
+            android:id="@+id/monthly_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 4.99 per month"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/monthly_card"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="5dp"
+                app:contentPadding="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#a8e063">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activate"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yearly_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 49.99 per year"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginTop="8dp"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/yearly_card"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="5dp"
+                app:contentPadding="10dp"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#a8e063">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Activate"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="per device"
+            android:textSize="10sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subscription_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="per device"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

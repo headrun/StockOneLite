@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.pages.ScanBarcodeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_scan"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <TextView
+            android:id="@+id/image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scan SKU"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--<SurfaceView-->
+        <!--android:id="@+id/camera_preview"-->
+        <!--android:layout_below="@+id/toolbar_scan"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--</SurfaceView>-->
+
+    <fragment
+        android:id="@+id/barcode_scanner"
+        android:layout_below="@+id/toolbar_scan"
+        android:name="info.androidhive.barcode.BarcodeReader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:auto_focus="true"
+        app:use_flash="false" />
+
+    <info.androidhive.barcode.ScannerOverlay
+        android:layout_below="@+id/toolbar_scan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#44000000"
+        app:line_color="#7323DC"
+        app:line_speed="6"
+        app:line_width="4"
+        app:square_height="200"
+        app:square_width="200" />
+
+
+</RelativeLayout>
